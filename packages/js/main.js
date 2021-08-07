@@ -40,7 +40,7 @@ function toggleSkills() {
     skillsContent[i].className = "skills__content skills__close";
   }
   if (itemClass === "skills__content skills__close") {
-    this.parentNode.className = "skills__content skills_open";
+    this.parentNode.className = "skills__content skills__open";
   }
 }
 
@@ -54,7 +54,6 @@ const tabs = document.querySelectorAll("[data-target]"),
 
 tabs.forEach((tab) => {
   tab.addEventListener("click", () => {
-    console.log("click disparado");
     const target = document.querySelector(tab.dataset.target);
 
     tabContents.forEach((tabContent) => {

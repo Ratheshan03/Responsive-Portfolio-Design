@@ -1282,6 +1282,10 @@ img {
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
+  body {
+    margin: 0;
+  }
+
   .header,
   .main,
   .footer__container {
@@ -1299,14 +1303,19 @@ img {
   .portfolio__content {
     column-gap: 5rem;
   }
+
+  .project__container {
+    padding-bottom: 30px;
+  }
+
   .swiper-portfolio-icon {
     font-size: 3.5rem;
   }
   .swiper-button-prev {
-    left: 3.5rem;
+    left: -3.5rem;
   }
   .swiper-button-next {
-    right: 3.5rem;
+    right: -3.5rem;
   }
   .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: -4.5rem;

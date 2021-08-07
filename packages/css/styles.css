@@ -263,8 +263,14 @@ img {
 }
 
 /* Active link */
+.active-link {
+  color: var(--first-color);
+}
 
 /* Change background header */
+.scroll-header {
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+}
 
 /*==================== HOME ====================*/
 
@@ -348,13 +354,12 @@ img {
 .home__scroll-arrow {
   font-size: 1.25rem;
 }
-
 /*==================== BUTTONS ====================*/
 
 .button {
   display: inline-block;
   background-color: var(--first-color);
-  color: #fff;
+  color: #ffff;
   padding: 1rem;
   border-radius: 0.5rem;
   font-weight: var(--font-medium);
@@ -365,14 +370,39 @@ img {
 }
 
 .button__icon {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   margin-left: var(--mb-0-5);
   transition: 0.3s;
+}
+
+.button--white {
+  background-color: #fff;
+  color: var(--first-color);
+}
+
+.button--white:hover {
+  background-color: #fff;
 }
 
 .button--flex {
   display: inline-flex;
   align-items: center;
+  transition: 0.3s;
+}
+
+.button--small {
+  padding: 0.75rem 1rem;
+}
+
+.button--link {
+  padding: 0;
+  background-color: transparent;
+  color: var(--first-color);
+}
+
+.button--link:hover {
+  background-color: transparent;
+  color: var(--first-color-alt);
 }
 
 /*==================== ABOUT ====================*/

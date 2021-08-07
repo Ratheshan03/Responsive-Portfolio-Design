@@ -7,7 +7,7 @@
 
   /*========== Colors ==========*/
   /* Change favorite color */
-  --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+  --hue-color: 190; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
   /* HSL color mode */
   --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -20,6 +20,8 @@
   --input-color: hsl(var(--hue-color), 70%, 96%);
   --body-color: hsl(var(--hue-color), 60%, 99%);
   --container-color: #fff;
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
@@ -142,6 +144,7 @@ img {
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
   padding: 2rem 0 4rem;
+  margin-bottom: 40px;
 }
 
 .section__title {
@@ -1024,11 +1027,12 @@ img {
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 380px) {
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
   }
+
   .nav__menu {
     padding: 2rem 0.25rem 4rem;
   }
@@ -1036,12 +1040,29 @@ img {
   .nav__list {
     column-gap: 0;
   }
+
   .home__content {
-    grid-template-columns: 0.25fr 3fr;
+    grid-template-columns: 0.35fr 3fr;
   }
 
   .home__blob {
-    width: 180px;
+    width: 250px;
+  }
+
+  .home__social-icon {
+    width: 30px;
+  }
+
+  .home__subtitle {
+    font-size: 24px;
+  }
+
+  .home__description {
+    font-size: 18px;
+  }
+
+  .home__button {
+    font-size: 20px;
   }
 
   .skills__title {
@@ -1089,6 +1110,7 @@ img {
   .home__content {
     grid-template-columns: max-content 1fr 1fr;
   }
+
   .home__data {
     grid-column: initial;
   }

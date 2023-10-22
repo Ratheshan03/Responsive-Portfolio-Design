@@ -108,6 +108,11 @@ body.dark-theme {
   margin: 0;
 }
 
+::selection {
+  background-color: #57c9e0;
+  color: white;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -296,10 +301,12 @@ img {
 .home__social-icon {
   font-size: 1.25rem;
   color: var(--first-color);
+  transition: 0.6s;
 }
 
 .home__social-icon:hover {
   color: var(--first-color-alt);
+  transform: scale(1.3);
 }
 
 .home__blob {
@@ -971,7 +978,7 @@ img {
 .footer__copy {
   font-size: var(--smaller-font-size);
   text-align: center;
-  color: var(--text-color-light);
+  color: white;
   margin-top: var(--mb-3);
 }
 
